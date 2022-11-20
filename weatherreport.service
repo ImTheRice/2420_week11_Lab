@@ -1,0 +1,9 @@
+[Unit]
+Decription=Use curl and wttr to get weather everyday at 5:00 am
+
+[Service]
+Type=onesho
+ExecStart=/opt/weatherreport/weatherreport
+
+[Install]
+WantedBy=multi-user.target
