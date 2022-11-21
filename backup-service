@@ -7,3 +7,4 @@ FILES=$(tail +2 ./readtest)
 echo $FILE
 
 rsync -aPv -e "ssh -i $HOME/.ssh/WorkingOne" $FILE root@$IP:BackupDir/
+exit 0
