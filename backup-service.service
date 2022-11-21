@@ -1,0 +1,9 @@
+[Unit]
+Decription=Use rsync to backup files in backuplist every Friday at 01:00
+
+[Service]
+Type=oneshot
+ExecStart=/opt/backup-service/backup-service
+
+[Install]
+WantedBy=multi-user.target
